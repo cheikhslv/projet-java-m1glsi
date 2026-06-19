@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+/* ===== En-tête ===== */
+.site-header {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 22px 10px;
+}
+
+.site-header h1 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 2.4rem;
+}
+
+/* ===== Navigation ===== */
+.site-nav {
+    background-color: #000000;
+    border-top: 1px solid #333;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.site-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.site-nav li {
+    border-left: 1px solid #ffffff;
+}
+
+.site-nav a {
+    display: block;
+    padding: 10px 18px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.site-nav a:hover {
+    background-color: #222;
+}
+
+.site-nav a.active {
+    border-bottom: 3px solid #2ecc40;
+}
+
+/* ===== Contenu ===== */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 25px 20px 60px;
+}
+
+.section-titre {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+/* ===== Cartes d'articles ===== */
+.carte-article {
+    background-color: #e8e8e8;
+    border: 1px solid #b9b9b9;
+    border-radius: 10px;
+    padding: 22px 28px;
+    margin-bottom: 22px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.carte-article h3 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+
+.carte-article h3 a {
+    color: #111;
+    text-decoration: none;
+}
+
+.carte-article h3 a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.carte-article .contenu {
+    color: #2a2a2a;
+    font-size: 1rem;
+}
+
+.lien-lire {
+    display: inline-block;
+    margin-top: 12px;
+    color: #1a6b2f;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.lien-lire:hover {
+    text-decoration: underline;
+}
+
+.message-vide {
+    text-align: center;
+    color: #777;
+    font-style: italic;
+    padding: 40px 0;
+}
+
+/* ===== Détail d'un article ===== */
+.article-detail {
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px 35px;
+}
+
+.badge-categorie {
+    display: inline-block;
+    background-color: #2ecc40;
+    color: #fff;
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    margin-bottom: 14px;
+}
+
+.article-detail h2 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.article-detail .meta {
+    color: #888;
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+}
+
+.contenu-complet {
+    font-size: 1.05rem;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+/* ===== Pied de page ===== */
+.site-footer {
+    background-color: #000000;
+    color: #cfcfcf;
+    text-align: center;
+    padding: 18px 10px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 0.85rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+    .site-header h1 {
+        font-size: 1.5rem;
+    }
+    .site-nav {
+        justify-content: center;
+    }
+    .site-nav ul {
+        flex-wrap: wrap;
+    }
+}
